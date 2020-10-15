@@ -1,0 +1,16 @@
+/*Animações */
+@keyframes up {
+    from {   /*Onde começa*/
+        opacity: 0;
+        transform: translateY(16px); /*Partindo do ponto vertical vai transformar o item subindo (negativo transforma descendo)*/
+    }
+    to{    /*Onde termina*/
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animate-up {
+    animation-name: up;
+    animation-duration: 300ms;
+    animation-fill-mode: backwards; /*faz com que o ponto de término da animação permaneça no elemento*/
+}

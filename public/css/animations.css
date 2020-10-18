@@ -9,8 +9,42 @@
         transform: translateY(0);
     }
 }
+
+@keyframes right {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
 .animate-up {
     animation-name: up;
     animation-duration: 300ms;
     animation-fill-mode: backwards; /*faz com que o ponto de término da animação permaneça no elemento*/
+}
+
+.animate-right {
+    animation-name: right;
+    animation-duration: 200ms;
+
+}
+
+.animate-appear {
+    animation-name: appear;
+    animation-duration: 300ms;
+    animation-fill-mode: backwards;
 }

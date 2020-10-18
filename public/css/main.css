@@ -1,21 +1,23 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /*Continuando da page-orph... Por padrão ele é content-box e aqui o alteramos para width pegar toda a lateral*/
 }
 
 body {
     height: 100vh;
     color: white;
+    background: #EBF2F5;/*A hashtag tras as cores RGB, sendo "EB" para R. "F2" para B e "F5" para G */ 
 }
 
 :root {
     font-size: 62.5%;
 }
 
-body, input, button, textarea {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1;
-    font-family: 'Nunito', sans-serif;
+body, 
+input, 
+button, 
+textarea {
+    font: 400 1.8rem/1 "Nunito", sans-serif;
     /* Ou pode-se usar a seguinte abreviação: font: 400 18px/1 'Nunito', sans-serif; */
 }
